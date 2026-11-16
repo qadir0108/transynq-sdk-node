@@ -1,0 +1,54 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+      - run: npm ci
+      - name: Type-check
+        run: npm run typecheck
+      - name: Lint
+        run: npm run lint
+      - name: Test
+        run: npm test
+      - name: Build (ESM + CJS + .d.ts)
+        run: npm run build
+      - name: Examples type-check
+        run: npm run examples
+      - name: Smoke-test both module formats
+        run: |
+          node -e "const s=require('./dist/index.cjs'); if (s.OPERATION_COUNT !== 705) process.exit(1)"
+          node --input-type=module -e "import('./dist/index.js').then(s => { if (s.OPERATION_COUNT !== 705) process.exit(1) })"
+
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Build API reference (TypeDoc)
+        run: npm run docs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: api-reference
+          path: docs/api/

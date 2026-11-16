@@ -1,0 +1,11 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/index.ts"],
+  "out": "docs/api",
+  "name": "Transynq Node.js SDK",
+  "readme": "README.md",
+  "excludeInternal": true,
+  "excludePrivate": true,
+  "treatWarningsAsErrors": false,
+  "validation": { "notExported": false, "invalidLink": true, "notDocumented": false }
+}
