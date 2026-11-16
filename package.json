@@ -6,11 +6,11 @@
   "author": "Transynq",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qadir0108/transynq-sdk-node.git"
+    "url": "git+https://github.com/transynq-io/transynq-sdk-node.git"
   },
-  "homepage": "https://github.com/qadir0108/transynq-sdk-node",
+  "homepage": "https://github.com/transynq-io/transynq-sdk-node",
   "bugs": {
-    "url": "https://github.com/qadir0108/transynq-sdk-node/issues"
+    "url": "https://github.com/transynq-io/transynq-sdk-node/issues"
   },
   "keywords": [
     "transynq",

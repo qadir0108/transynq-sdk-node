@@ -21,7 +21,7 @@ until then, and for the very first publish of the package, the workflow uses an 
 
    | Field | Value |
    |---|---|
-   | Organization or user | `qadir0108` |
+   | Organization or user | `transynq-io` |
    | Repository | `transynq-sdk-node` |
    | Workflow filename | `release.yml` |
    | Environment name | `release` |

@@ -30,16 +30,16 @@
 
   --font-family-text: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-family-code: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --brand-logo: url("https://raw.githubusercontent.com/qadir0108/transynq-sdk-node/main/assets/brand/transynq-logo-light.png");
+  --brand-logo: url("https://raw.githubusercontent.com/transynq-io/transynq-sdk-node/main/assets/brand/transynq-logo-light.png");
 }
 
 :root[data-theme="dark"] {
-  --brand-logo: url("https://raw.githubusercontent.com/qadir0108/transynq-sdk-node/main/assets/brand/transynq-logo-dark.png");
+  --brand-logo: url("https://raw.githubusercontent.com/transynq-io/transynq-sdk-node/main/assets/brand/transynq-logo-dark.png");
 }
 
 @media (prefers-color-scheme: dark) {
   :root[data-theme="os"] {
-    --brand-logo: url("https://raw.githubusercontent.com/qadir0108/transynq-sdk-node/main/assets/brand/transynq-logo-dark.png");
+    --brand-logo: url("https://raw.githubusercontent.com/transynq-io/transynq-sdk-node/main/assets/brand/transynq-logo-dark.png");
   }
 }
 

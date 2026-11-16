@@ -10,4 +10,4 @@
 - Supported runtimes: Node.js 20 or later (built-in `fetch`, `FormData`, `Blob`, `crypto.randomUUID`); ESM and CommonJS builds
   with TypeScript declarations. A Node.js line leaves the support matrix in a minor release after its upstream end of life.
 
-See the [changelog](https://github.com/qadir0108/transynq-sdk-node/blob/main/CHANGELOG.md) for the changes of each release.
+See the [changelog](https://github.com/transynq-io/transynq-sdk-node/blob/main/CHANGELOG.md) for the changes of each release.
