@@ -1,6 +1,6 @@
 {
   "name": "@transynq/sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Node.js / TypeScript client for the Transynq TMS API",
   "license": "MIT",
   "author": "Transynq",

@@ -21,7 +21,7 @@ The official Node.js / TypeScript client for **Transynq TMS** (`/api/v1`): all 7
 bookings, dispatch, invoicing, customers, driver app...), with typed models, authentication, retries, typed errors, paging,
 optimistic concurrency, file transfer and long-running operations handled for you.
 
-- Package: `@transynq/sdk` - version 1.0.0 (semantic versioning, independent of the API version)
+- Package: `@transynq/sdk` - version 1.0.1 (semantic versioning, independent of the API version)
 - Generated from the Transynq API OpenAPI 3.1 contract v1.0.0 plus a hand-written core
 - Licence: [MIT](https://github.com/transynq-io/transynq-sdk-node/blob/main/LICENSE)
 
