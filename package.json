@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/qadir0108/transynq-sdk-node.git"
   },
-  "homepage": "https://github.com/qadir0108/transynq-sdk-node#readme",
+  "homepage": "https://github.com/qadir0108/transynq-sdk-node",
   "bugs": {
     "url": "https://github.com/qadir0108/transynq-sdk-node/issues"
   },
@@ -21,7 +21,7 @@
   ],
   "type": "module",
   "engines": {
-    "node": ">=18.17"
+    "node": ">=20"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -61,10 +61,10 @@
     "eslint": "^9.14.0",
     "msw": "^2.6.4",
     "tsup": "^8.3.5",
-    "typedoc": "^0.26.11",
+    "tsx": "^4.19.2",
+    "typedoc": "^0.28.19",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.14.0",
-    "vitest": "^2.1.5",
-    "tsx": "^4.19.2"
+    "vitest": "^2.1.5"
   }
 }

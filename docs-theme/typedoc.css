@@ -1,0 +1,66 @@
+/* Transynq brand theme for the TypeDoc default theme (light and dark). The logos are served from the repository (assets/brand/). */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap");
+
+:root {
+  --light-color-background: #FFFFFF;
+  --light-color-background-secondary: #F8FAFC;
+  --light-color-background-navbar: #FFFFFF;
+  --light-color-accent: #E5E7EB;
+  --light-color-text: #1F2937;
+  --light-color-text-aside: #6B7280;
+  --light-color-link: #2563EB;
+  --light-color-focus-outline: #8B5CF6;
+  --light-color-ts-class: #2563EB;
+  --light-color-ts-interface: #06B6D4;
+  --light-color-ts-function: #8B5CF6;
+  --light-color-warning-text: #F59E0B;
+
+  --dark-color-background: #0B1220;
+  --dark-color-background-secondary: #1F2937;
+  --dark-color-background-navbar: #0B1220;
+  --dark-color-accent: #1F2937;
+  --dark-color-text: #E5E7EB;
+  --dark-color-text-aside: #9CA3AF;
+  --dark-color-link: #60A5FA;
+  --dark-color-focus-outline: #A78BFA;
+  --dark-color-ts-class: #60A5FA;
+  --dark-color-ts-interface: #22D3EE;
+  --dark-color-ts-function: #A78BFA;
+  --dark-color-warning-text: #F59E0B;
+
+  --font-family-text: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-family-code: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --brand-logo: url("https://raw.githubusercontent.com/qadir0108/transynq-sdk-node/main/assets/brand/transynq-logo-light.png");
+}
+
+:root[data-theme="dark"] {
+  --brand-logo: url("https://raw.githubusercontent.com/qadir0108/transynq-sdk-node/main/assets/brand/transynq-logo-dark.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="os"] {
+    --brand-logo: url("https://raw.githubusercontent.com/qadir0108/transynq-sdk-node/main/assets/brand/transynq-logo-dark.png");
+  }
+}
+
+.tsd-page-toolbar {
+  border-bottom: 3px solid #2563EB;
+}
+
+.tsd-page-toolbar .title::before {
+  content: "";
+  display: inline-block;
+  width: 120px;
+  height: 28px;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  background: var(--brand-logo) left center / contain no-repeat;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+.tsd-generator {
+  color: var(--color-text-aside);
+}

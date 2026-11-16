@@ -7,7 +7,7 @@
   `X-Api-Version`.
 - The package version is in `package.json` and `SDK_VERSION`; `SPEC_SHA256` and `API_VERSION` say which contract the code was generated from.
 - Models ignore unknown properties and codes are open strings, so an older SDK keeps working against a newer API v1.
-- Supported runtimes: Node.js 18.17 or later (built-in `fetch`, `FormData`, `Blob`, `crypto.randomUUID`); ESM and CommonJS builds
+- Supported runtimes: Node.js 20 or later (built-in `fetch`, `FormData`, `Blob`, `crypto.randomUUID`); ESM and CommonJS builds
   with TypeScript declarations. A Node.js line leaves the support matrix in a minor release after its upstream end of life.
 
 See the [changelog](https://github.com/qadir0108/transynq-sdk-node/blob/main/CHANGELOG.md) for the changes of each release.

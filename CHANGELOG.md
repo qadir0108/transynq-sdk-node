@@ -5,6 +5,14 @@ and the project uses [semantic versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Minimum Node.js 20 (18 is end of life).
+
+### Added
+
+- Transynq branding for README, docs and package metadata.
+
 ## [1.0.0] - not yet released
 
 ### Added
